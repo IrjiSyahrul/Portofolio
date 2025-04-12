@@ -1,0 +1,31 @@
+.first-section{
+    display: flex;
+    background-color: aqua; 
+    justify-content: space-around;
+    height: 600px;
+}
+
+.nama{
+    align-content: center;
+}
+
+.profilePicture{
+    align-content: center;
+
+}
+
+.second-section{
+    background-color: rgb(101, 221, 221);
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+}
+.deskripsi-about-me{
+    margin: auto;
+    width: 40%;
+    border: 3px solid green;
+    padding: 10px;
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+}
