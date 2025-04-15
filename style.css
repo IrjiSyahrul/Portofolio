@@ -19,6 +19,8 @@
     font-size: 25px;
     font-style: italic;
     text-align: center;
+    height: 400px;
+    max-height: 800px;
 }
 .deskripsi-about-me{
     margin: auto;
@@ -28,4 +30,40 @@
     font-size: 25px;
     font-style: italic;
     text-align: center;
+}
+
+.skill {
+  padding: 16px;
+  background-color: #f9f9f9;
+  justify-content: center;
+  justify-items: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+  gap: 16px; /* Jarak antar elemen */
+  width: 60%; /* Gambar mengikuti lebar kontainer */
+  height: auto; /* Tinggi menyesuaikan proporsi */
+
+}
+
+.gallery-item {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 80%; /* Gambar mengikuti lebar kontainer */
+  height: auto; /* Tinggi menyesuaikan proporsi */
+}
+
+
+.desc {
+  padding: 8px;
+  font-size: 14px;
+  color: #555;
 }
