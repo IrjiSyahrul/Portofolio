@@ -31,7 +31,6 @@ html{
 
 .profilePicture {
   align-content: center;
-
 }
 
 .gambar {
@@ -154,7 +153,6 @@ html{
   height: auto;
   border-radius: 10px;
   
-
   margin-right: 10px;
   /* Memberikan jarak di sisi kiri gambar */
   margin-left: 10px;
@@ -260,4 +258,130 @@ footer {
 
 .footer-bottom a:hover {
   color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .first-section {
+    width: auto;
+    height: 600px;
+  }
+
+  .gambar{
+    height: 200px;
+    width: auto;
+  }
+
+  .nama h1 {
+    font-size: 40px;
+  }
+
+  .second-section {
+    font-size: 20px;
+
+  }
+  .deskripsi-about-me {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .card-content img {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Styles untuk layar kecil (HP) */
+  .first-section {
+    width: auto;
+  }
+
+  .second-section {
+    font-size: 20px;
+    width: auto;
+  }
+  .deskripsi-about-me {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .third-section {
+    background-color: #EDF7FA;
+    height: auto;
+  
+  }
+
+  .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .card-content img {
+    float: none;
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    
+    margin-right: 10px;
+    /* Memberikan jarak di sisi kiri gambar */
+    margin-left: 10px;
+    /* Memberikan jarak di bagian atas gambar */
+    margin-top: 10px;
+    /* Memberikan jarak di bagian bawah gambar */
+    margin-bottom: 10px;
+  
+}
+
+.container-skill{
+  height: 400px;
+  width: auto;
+}
+.skill {
+  padding: 16px;
+  background-color: white;
+  justify-content: center;
+  justify-items: center;
+  height: auto;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 kolom */
+  gap: 16px;
+  /* Jarak antar elemen */
+  width: 100%;
+  /* Gambar mengikuti lebar kontainer */
+  height: auto;
+  /* Tinggi menyesuaikan proporsi */
+  
+}
+
+.gallery-item {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 }
