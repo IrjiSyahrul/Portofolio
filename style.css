@@ -10,6 +10,7 @@ html{
 
 .container-fluid {
   font-size: 18px;
+  border: 2px solid;
 }
 
 .first-section {
@@ -17,6 +18,8 @@ html{
   background-color: white;
   justify-content: space-around;
   height: 600px;
+  border: 2px solid;
+
 }
 
 .nama {
@@ -31,12 +34,17 @@ html{
 
 .profilePicture {
   align-content: center;
+  border: 2px solid;
+
 }
 
 .gambar {
-  width: 800px;
+  max-width: 100%;
   /* Atur lebar gambar */
   height: auto;
+  border: 2px solid;
+  object-fit: contain;
+
 }
 
 .second-section {
@@ -47,6 +55,8 @@ html{
   padding-top: 20px;
   align-items: center;
   display: flex;
+  border: 2px solid;
+
 }
 
 .deskripsi-about-me {
@@ -59,6 +69,8 @@ html{
 }
 
 .container-skill{
+  border: 2px solid;
+
   height: 600px;
 }
 .skill {
@@ -77,6 +89,8 @@ html{
 }
 
 .gallery {
+  border: 2px solid;
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   /* 3 kolom */
@@ -90,6 +104,8 @@ html{
 }
 
 .gallery-item {
+  border: 2px solid;
+
   text-align: center;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -107,6 +123,8 @@ html{
 
 
 .desc {
+  border: 2px solid;
+
   padding: 8px;
   font-size: 14px;
   color: #555;
@@ -114,6 +132,8 @@ html{
 
 
 .third-section {
+  border: 2px solid;
+
   background-color: #EDF7FA;
   height: 650px;
 
@@ -262,19 +282,18 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .first-section {
-    width: auto;
-    height: 600px;
+  /* .first-section {
+    max-width: 100%;
   }
 
   .gambar{
-    height: 200px;
-    width: auto;
-  }
+    height: 100%;
+    max-width: 100%;
+  } */
 
-  .nama h1 {
-    font-size: 40px;
-  }
+  /* .nama h1 {
+    font-size: 3 rem;
+  } */
 
   .second-section {
     font-size: 20px;
@@ -298,12 +317,48 @@ footer {
   .footer-container {
     flex-direction: column;
   }
+
+  .third-section {
+    background-color: #EDF7FA;
+    height: auto;
+  
+  }
+
+  .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .card-content img {
+    float: none;
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    
+    margin-right: 10px;
+    /* Memberikan jarak di sisi kiri gambar */
+    margin-left: 10px;
+    /* Memberikan jarak di bagian atas gambar */
+    margin-top: 10px;
+    /* Memberikan jarak di bagian bawah gambar */
+    margin-bottom: 10px;
+}
 }
 
 @media (max-width: 480px) {
-  /* Styles untuk layar kecil (HP) */
-  .first-section {
-    width: auto;
+  .first-section{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .gambar {
+    max-width: 100%;
+    height: auto;
   }
 
   .second-section {
@@ -314,7 +369,7 @@ footer {
     margin: auto;
     width: 80%;
     padding: 10px;
-    font-size: 14px;
+    font-size: 1rem;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -348,7 +403,6 @@ footer {
     margin-top: 10px;
     /* Memberikan jarak di bagian bawah gambar */
     margin-bottom: 10px;
-  
 }
 
 .container-skill{
