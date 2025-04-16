@@ -64,7 +64,6 @@ html {
 }
 
 .container-skill {
-  border: 2px solid;
   height: 600px;
 }
 
@@ -283,18 +282,19 @@ footer {
   } */
 
   .second-section {
-    font-size: 20px;
+    font-size: 5rem;
 
   }
 
   .deskripsi-about-me {
     margin: auto;
-    width: 50%;
+    width: 80%;
     padding: 10px;
-    font-size: 20px;
+    font-size: 1rem;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
   }
+
 
   .card-content img {
     float: none;
@@ -342,6 +342,9 @@ footer {
   .first-section {
     display: flex;
     flex-direction: column-reverse;
+  }
+  .nama{
+    padding-left: 1rem;
   }
 
   .gambar {
