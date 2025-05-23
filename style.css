@@ -1,49 +1,97 @@
-.first-section{
-    display: flex;
-    background-color: aqua; 
-    justify-content: space-around;
-    height: 600px;
+html {
+  scroll-behavior: smooth;
 }
 
-.nama{
-    align-content: center;
+
+#navbarSupportedContent {
+  padding-right: 20px;
+  font-size: 18px;
 }
 
-.profilePicture{
-    align-content: center;
+.container-fluid {
+  font-size: 18px;
+}
+
+.first-section {
+  display: flex;
+  background-color: white;
+  justify-content: space-around;
+  height: 600px;
 
 }
 
-.second-section{
-    background-color: rgb(101, 221, 221);
-    font-size: 25px;
-    font-style: italic;
-    text-align: center;
-    height: 400px;
+.nama {
+  align-content: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.deskripsi-about-me{
-    margin: auto;
-    width: 40%;
-    border: 3px solid green;
-    padding: 10px;
-    font-size: 25px;
-    font-style: italic;
-    text-align: center;
+
+.nama h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.profilePicture {
+  align-content: center;
+
+}
+
+.gambar {
+  max-width: 100%;
+  /* Atur lebar gambar */
+  height: auto;
+  object-fit: contain;
+
+}
+
+.second-section {
+  background-color: #EDF7FA;
+  font-size: 25px;
+  text-align: center;
+  height: 500px;
+  padding-top: 20px;
+  align-items: center;
+  display: flex;
+
+}
+
+.deskripsi-about-me {
+  margin: auto;
+  width: 40%;
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-skill {
+  height: 600px;
 }
 
 .skill {
   padding: 16px;
-  background-color: #f9f9f9;
+  background-color: white;
   justify-content: center;
   justify-items: center;
+  height: 600px;
+}
+
+.judulSkill {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 kolom */
-  gap: 16px; /* Jarak antar elemen */
-  width: 60%; /* Gambar mengikuti lebar kontainer */
-  height: auto; /* Tinggi menyesuaikan proporsi */
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 kolom */
+  gap: 16px;
+  /* Jarak antar elemen */
+  width: 50%;
+  /* Gambar mengikuti lebar kontainer */
+  height: auto;
+  /* Tinggi menyesuaikan proporsi */
 
 }
 
@@ -56,8 +104,11 @@
 }
 
 .gallery-item img {
-  width: 80%; /* Gambar mengikuti lebar kontainer */
-  height: auto; /* Tinggi menyesuaikan proporsi */
+  width: 50%;
+  /* Gambar mengikuti lebar kontainer */
+  height: auto;
+  /* Tinggi menyesuaikan proporsi */
+  margin: 1;
 }
 
 
@@ -65,4 +116,326 @@
   padding: 8px;
   font-size: 14px;
   color: #555;
+}
+
+
+.third-section {
+  background-color: #EDF7FA;
+  height: auto;
+
+}
+
+.container-section {
+  justify-items: center;
+  justify-content: center;
+}
+
+.judulthird-section {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.judulthird-section a {
+  color: #00A8CC;
+  font-size: larger;
+  align-content: center;
+  text-decoration: none;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 1000px;
+  margin: 20px;
+  flex: 1;
+}
+
+.card-content img {
+  float: left;
+  max-width : 200px;
+  max-height:  150px;
+  height: fit-content;
+  border-radius: 10px;
+
+  margin-right: 10px;
+  /* Memberikan jarak di sisi kiri gambar */
+  margin-left: 10px;
+  /* Memberikan jarak di bagian atas gambar */
+  margin-top: 10px;
+  /* Memberikan jarak di bagian bawah gambar */
+  margin-bottom: 10px;
+
+}
+
+
+.card-content h3 {
+  margin-top: 10px;
+}
+
+
+
+.deskripsi-work {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+
+footer {
+  background-color: #111;
+  padding: 40px 20px;
+  flex: 1;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 2;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #f0f0f0;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Menambahkan flex untuk membuat elemen horizontal */
+  gap: 10px; /* Memberikan jarak antar elemen */
+}
+
+.footer-section ul li {
+  flex: none; /* Menjaga elemen agar tidak melar */
+    margin-bottom: 10px;
+
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #bbb;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+.footer-bottom .partners {
+  margin: 20px 0;
+}
+
+.footer-bottom .partners span {
+  display: inline-block;
+  margin: 0 10px;
+  color: #bbb;
+}
+
+.footer-bottom .partners span a {
+  text-decoration: none;
+  color: #bbb;
+}
+
+.footer-bottom .partners span a:hover {
+  color: #fff;
+}
+
+.footer-bottom a {
+  color: #bbb;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* .first-section {
+    max-width: 100%;
+  }
+
+  .gambar{
+    height: 100%;
+    max-width: 100%;
+  } */
+
+  /* .nama h1 {
+    font-size: 3 rem;
+  } */
+
+  .second-section {
+    font-size: 5rem;
+
+  }
+
+  .deskripsi-about-me {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+  .card-content img {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .third-section {
+    background-color: #EDF7FA;
+    height: auto;
+
+  }
+
+  .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .card-content img {
+    float: none;
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+
+    margin-right: 10px;
+    /* Memberikan jarak di sisi kiri gambar */
+    margin-left: 10px;
+    /* Memberikan jarak di bagian atas gambar */
+    margin-top: 10px;
+    /* Memberikan jarak di bagian bawah gambar */
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .first-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .nama{
+    padding-left: 1rem;
+  }
+
+  .gambar {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .second-section {
+    font-size: 20px;
+    width: auto;
+  }
+
+  .deskripsi-about-me {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .third-section {
+    background-color: #EDF7FA;
+    height: auto;
+
+  }
+
+  .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .card-content img {
+    float: none;
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+
+    margin-right: 10px;
+    /* Memberikan jarak di sisi kiri gambar */
+    margin-left: 10px;
+    /* Memberikan jarak di bagian atas gambar */
+    margin-top: 10px;
+    /* Memberikan jarak di bagian bawah gambar */
+    margin-bottom: 10px;
+  }
+
+  .container-skill {
+    height: 400px;
+    width: auto;
+  }
+
+  .skill {
+    padding: 16px;
+    background-color: white;
+    justify-content: center;
+    justify-items: center;
+    height: auto;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 kolom */
+    gap: 16px;
+    /* Jarak antar elemen */
+    width: 100%;
+    /* Gambar mengikuti lebar kontainer */
+    height: auto;
+    /* Tinggi menyesuaikan proporsi */
+
+  }
+
+  .gallery-item {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
 }
